@@ -24,7 +24,7 @@ public class Principal {
 	static LeerArchivo doc = new LeerArchivo();
 	protected final static String[] archivo = doc.lectura("/Users/wtorres/Desktop/proyecto.txt");
 	
-	protected static void inicializarHilos() throws InterruptedException{
+	protected static void inicializarHilos(){
 		
 		for(int i = 0; i < numeroFilosofos; i++){
 			// instanciamos los semaforos asignadole 1 permiso a cada palillo
